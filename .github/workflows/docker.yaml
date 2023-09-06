@@ -19,7 +19,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: docker build python
       run: |
-        docker build ./python -t aimvector/python:1.0.0
+        docker build ./python -t python:latest
     - name: docker push
       run: |
-        docker push aimvector/python:1.0.0
+        docker push python:latest
