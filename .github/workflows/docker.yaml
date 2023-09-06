@@ -19,7 +19,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: docker build python
       run: |
-        docker build ./python -t python:latest
+        docker build ./python -t nosferatu911/python:1.0.0
     - name: docker push
       run: |
-        docker push python:latest
+        docker push nosferatu911/python:1.0.0
